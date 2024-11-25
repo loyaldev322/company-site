@@ -1,0 +1,57 @@
+.home{
+    min-height: 100vh;
+    width: 100vw;
+    background-image: url(../assets/images/img1.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    padding: 0 1rem;
+    position: relative;
+    overflow: hidden !important;
+}
+
+.home h1{
+    color: #fff;
+    font-size: 5.5rem;
+}
+
+.home h2{
+    color: #fff;
+    font-size: 3rem;
+}
+
+.home .wave{
+    position: absolute;
+    bottom: -.5rem;
+    left: 0;
+    height: 9rem;
+    width: 100%;
+    background: url(../assets/images/wave1.png);
+    background-size: 100rem 9rem;
+    animation: waves 8s linear infinite;
+    background-repeat: repeat-x;
+}
+
+.home .wave2{
+    animation-direction: reverse;
+    animation-duration: 6s;
+    opacity: .3;
+}
+
+.home .wave3{
+    animation-duration: 4s;
+    opacity: .5;
+}
+
+
+@keyframes waves{
+    0%{
+        background-position-x: 0;
+    }
+    100%{
+        background-position-x: 100rem;
+    }
+}
